@@ -13,7 +13,7 @@ pub trait CipherStateType {
 #[derive(Default)]
 pub struct CipherState<C: CipherType + Default> {
     cipher : C,
-    n : u64,
+    pub n : u64,
     has_key : bool,
     overflow: bool
 }
